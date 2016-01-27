@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 title-box text-center">
+  	<h1>Three Day Forecast</h1>
+  	<h3 class="upper">{{place}}</h3>
+  </div>
+</div>
+<div class="row container">
+	<div class="col-md-3 forecast-box" ng-repeat= "forecast in forecasts">
+    <img ng-src='{{forecast.icon_url}}'/>
+		<h3>{{forecast.date.weekday}}, {{forecast.date.monthname}} {{forecast.date.day}}</h3>
+		<h4>Conditions: {{forecast.conditions}}</h4>
+    <h4>High: {{forecast.high.fahrenheit}}</h4>
+		<h4>Low: {{forecast.low.fahrenheit}}</h4>
+    <h4>Humidity: {{forecast.avehumidity}}</h4>
+	</div>
+</div>

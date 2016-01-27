@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@media screen and (max-width: 640px){
+  .title-box {
+    height: 30% !important;
+  }
+  .forecast-box {
+    margin-left: 0px !important;
+  }
+}
+
+body {
+  font-family: 'Open Sans';
+  background: url("http://www.strategictechplanning.com/blog/wp-content/uploads/2014/01/clouds.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@mixin opaqueBackground{
+  margin-top:80px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h3 {
+  padding-bottom: 2%;
+}
+.input-box {
+  @include opaqueBackground;
+  height: 500px;
+  padding-top: 7%;
+}
+
+.button {
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  height: 42px;
+  border-radius: 10px;
+  outline-style: none; }
+
+.title-box {
+  @include opaqueBackground;
+  height: 25%;
+  margin-bottom: 0.35%;
+}
+
+.forecast-box {
+  @include opaqueBackground;
+  padding-top: 1%;
+  height: 300px;
+  margin-left: 95px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
