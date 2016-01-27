@@ -20,9 +20,9 @@ h3 {
   padding-bottom: 2%; }
 
 .input-box {
-  margin-top: 80px;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
+  margin-top: 80px;
   height: 500px;
   padding-top: 7%; }
 
@@ -35,14 +35,13 @@ h3 {
   outline-style: none; }
 
 .title-box {
-  margin-top: 80px;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
+  margin-top: 60px;
   height: 25%;
-  margin-bottom: 0.35%; }
+  margin-bottom: 40px; }
 
 .forecast-box {
-  margin-top: 80px;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   padding-top: 1%;

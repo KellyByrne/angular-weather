@@ -3,6 +3,11 @@ app.controller("WeatherCtrl", ['$scope', '$http', '$location', 'City', function(
 		var location = $scope.location;
 		var city = location.split(',')[0].trim();
 		var state = location.split(',')[1].trim();
+
+		if(state.length > 2){
+
+		}
+
 		console.log('Location:' + city + "," + state)
 
 		$http.get('http://api.wunderground.com/api/62db039518025c86/forecast10day/q/' + state + '/' + city + '.json')
@@ -20,6 +25,12 @@ app.controller("ForecastCtrl", ['$scope', '$location', 'City', function($scope, 
 	$scope.place = City.weatherData[0].location;
 	$scope.forecasts = City.weatherData[0].forecast.forecastday.slice(1,4);
 	console.log($scope.forecasts)
+
+	$scope.searchAgain = function() {
+		City.weatherData = [];
+		$location.path('/')
+	}
+
 }])
 
 
