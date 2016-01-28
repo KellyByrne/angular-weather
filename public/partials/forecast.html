@@ -1,8 +1,12 @@
 <button class="sun-button" ng-click="searchAgain()">Enter New City</button>
 <div class="row">
   <div class="col-md-8 col-md-offset-2 title-box text-center">
-  	<h1>Three Day Forecast</h1>
-  	<h3 class="upper">{{place}}</h3>
+  	<h2>Three Day Forecast</h2>
+  	<h4 class="upper">{{place}}</h4>
+    <h5>Today's Weather</h5>
+    <h6>Conditions: {{currentWeather.conditions}}</h6>
+    <h6>High: {{currentWeather.high.fahrenheit}}</h6>
+    <h6>Low: {{currentWeather.low.fahrenheit}}</h6>
   </div>
 </div>
 <div class="row container">
