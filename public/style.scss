@@ -46,7 +46,7 @@ h3 {
 
 .title-box {
   @include opaqueBackground;
-  margin-top:60px;
+  margin-top:30px;
   height: 25%;
   margin-bottom: 40px;
 }
@@ -61,3 +61,4 @@ h3 {
 .upper {
   text-transform: uppercase;
 }
+
